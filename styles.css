@@ -143,3 +143,68 @@ h1 {
         max-width: 70%;
     }
 }
+
+/* Navigation Buttons in Modal */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 1.2em;
+}
+
+/* Adjust modal content positioning */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    animation: zoomIn 0.6s;
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 768px) {
+    .prev, .next {
+        font-size: 30px;
+    }
+
+    #caption {
+        font-size: 1em;
+    }
+}
